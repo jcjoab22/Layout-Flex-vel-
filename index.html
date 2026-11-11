@@ -15,11 +15,12 @@
    <main class="login-page">
 
     <section class="login-panel">
+        
         <div class="logo">
-            <img src="asse/riot-logo.png" alt="logo Riot Games">
+             <img src="asse/riot-logo.png" alt="Logo Riot Games" class="logo">
         </div>
         <div class="login-content">
-            <h1>Fazsr login</h1>
+            <h1>Fazer login</h1>
 
             <form class="login-form">
                 <label for="username">Nome De Usuario</label>
@@ -48,11 +49,42 @@
                 </label>
 
 
-                
+                <button type="submit" class="submit-btton"></button>
 
             </form>
+            <div class="help-links">
+
+                <a href="#">NÃO CONSEGUE INICIAL SESSÃO?</a>
+
+                <a href="#">CRIAR CONTA</a>
+
+            </div>
+        </div>]
+
+        <footer class="painel-footer">
+
+            <span>SUPORTE</span>
+
+            <SPan>AVISO DE PRIVACIDADE</SPan>
+
+            <SPan>TERMOS DE SERVIÇO</SPan>
+        </footer>
+    </section>
+
+    <section class="art-panei">
+        <div class="art-overlay">
+            <p>RIOT GAMER</p>
         </div>
     </section>
+
    </main> 
+
+   <script>
+     document.querySelector(".login-form").addEventListener("submit", function(event) {
+            event.preventDefault();
+
+             alert("Este é apenas um projeto demonstrativo!");
+        });
+   </script>
 </body>
 </html>
